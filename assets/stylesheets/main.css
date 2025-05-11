@@ -3,3 +3,18 @@
     --btn-text-color: rgb(174, 219, 234); 
     --btn-background-color: rgb(119, 112, 112);
 }
+#container {
+    height: 100vh;
+    background-image: url("../images/background_IMG.avif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 50px 0px;
+}
+.wrapper {
+    background-color: rgb(209, 222, 217);
+    width: 1260px;
+    margin: 0 auto;
+    height: calc(100vh - 100px);
+     border-radius: 20px;
+     box-shadow: 0px 0px 15px 3px rgb(203, 204, 194);
+}
