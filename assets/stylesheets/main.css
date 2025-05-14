@@ -16,7 +16,7 @@
     padding: 100px 0px;
 }
 .wrapper {
-    background-color: rgb(209, 222, 217);
+    background-color: rgb(209, 222, 217);  
     width: 1260px;
     margin: 0 auto;
     height: calc(100vh - 150px);
@@ -52,7 +52,12 @@
 .intro a{
     color: rgb(96, 96, 100);
 }
-
+#content {
+    position: relative;
+}
+.content > section {
+    overflow-y: scroll;
+}
 #home {
     text-align: center;
     display: flex;
@@ -66,4 +71,36 @@
 #home p {
     font-size: 2em;
     color: var(--heading-color);
+}
+#about {
+    padding: 50px;
+    padding-top: 40px;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    background-color: rgb(209, 222, 217);
+    color: var(--heading-color);
+}
+#about h2 {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(42, 45, 45);
+}
+#about p{
+    text-align: justify;
+}
+#about ul li{
+    letter-spacing: 1px;
+}
+#about ul li span {
+    color: var(--heading-color);
+    font-weight: bold;
+}
+
+#about .icon{
+    color: rgb(84, 148, 192);
+    font-size: 2em;
+}
+#about h4 {
+    font-size: 1.2em;
 }
