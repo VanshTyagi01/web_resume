@@ -54,6 +54,12 @@
 }
 #content {
     position: relative;
+
+}
+.content {
+    position: relative;  /* Add this to contain the absolute positioning */
+    width: 100%;        /* Add this to ensure proper width calculation */
+    height: 100%;       /* Add this to ensure proper height calculation */
 }
 .content > section {
     overflow-y: scroll;
@@ -72,16 +78,18 @@
     font-size: 2em;
     color: var(--heading-color);
 }
-#about {
+#about, #skills {
     padding: 50px;
     padding-top: 40px;
     position: absolute;
     top: 0px;
     height: 100%;
+    width: 100%;
     background-color: rgb(209, 222, 217);
     color: var(--heading-color);
 }
-#about h2 {
+#about h2, #skills h2 {
+    letter-spacing: 2px;
     padding-bottom: 20px;
     margin-bottom: 30px;
     border-bottom: 1px solid rgb(42, 45, 45);
@@ -103,4 +111,35 @@
 }
 #about h4 {
     font-size: 1.2em;
+}
+.timeline {
+    position: relative;
+}
+.timeline .box {
+    background-color: rgb(184, 223, 235);
+    color: var(--heading-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    
+}
+.timeline .box .left{
+    padding-left: 0px;
+}
+.timeline .box .inner-box {
+    background-color: aliceblue;
+    padding: 20px;
+}
+.timeline .box.right {
+    position: relative;
+    left: 50%;
+    padding-left: 25px;
+}
+.timeline::after {
+    content: "";
+    height: 100%;
+    left: 50%;
+    top: 0%;
+    position: absolute;
+    border: 3px solid white;
 }
