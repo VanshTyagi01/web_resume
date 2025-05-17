@@ -121,7 +121,7 @@
     padding: 20px;
     border-radius: 10px;
     width: 50%;
-    
+    position: relative;
 }
 .timeline .box .left{
     padding-left: 0px;
@@ -134,6 +134,22 @@
     position: relative;
     left: 50%;
     padding-left: 25px;
+}
+.timeline .box:after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(130, 155, 188);
+    border-radius: 50%;
+    z-index: 1;
+}
+.timeline .box.left::after{
+    right: -13px;
+}
+.timeline .box.right::after{
+    left: -7px;
 }
 .timeline::after {
     content: "";
