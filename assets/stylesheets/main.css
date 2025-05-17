@@ -159,3 +159,19 @@
     position: absolute;
     border: 3px solid white;
 }
+.timeline .box::before{
+    content: "";
+    position: absolute;
+    margin-top: -10px;
+    top: 40%;
+    z-index: 2;
+    border: 20px solid;
+}
+.timeline .box.left::before{
+    border-color: transparent transparent transparent aliceblue;
+    right: -12px;
+}
+.timeline .box.right::before{
+    border-color: transparent aliceblue transparent transparent;
+    left: -6px;
+}
